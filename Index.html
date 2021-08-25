@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="bootstrap.min.css" />
+
+    <title>Classroom Attendance</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="text-center display-4 text-primary"><i class="fas fa-chalkboard-teacher"></i><strong>Classroom Attendance</strong></h1>
+
+        <form id="class-list">
+            <div class="from-group">
+                <label for="name" class="from-label mt-4"><strong>Name</strong></label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+
+            <div class="from-group">
+                <label for="ID" class="from-label mt-4"><strong>Identification Number</strong></label>
+                <input type="text" class="form-control" id="identification" placeholder="Enter your ID">
+            </div>
+
+            <div class="from-group">
+                <label for="semester" class="from-label mt-4"><strong>Semester</strong></label>
+                <input type="text" class="form-control" id="semester" placeholder="Current semester">
+            </div>
+
+            <div class="from-group">
+                <label for="subject" class="from-label mt-4"><strong>Subject</strong></label>
+                <input type="text" class="form-control" id="subject-name" placeholder="Enter subject name">
+            </div>
+
+            <div class="form-group">
+                <label for="date" class="form-label mt-4"><strong>Date</strong></label>
+                <input class="form-control" id="date" type="date">
+            </div>
+
+            <input type="submit" value="Submit" style="float: right;" class="btn btn-dark mt-3">
+        </form>
+    </div>
+
+    <script src="code.js"></script>
+</body>
+</html>
