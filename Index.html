@@ -17,32 +17,47 @@
 
         <form id="class-list">
             <div class="from-group">
-                <label for="name" class="from-label mt-4"><strong>Name</strong></label>
+                <label for="name" class="from-label mt-5"><strong>Name</strong></label>
                 <input type="text" class="form-control" id="name" placeholder="Enter your name">
             </div>
 
             <div class="from-group">
-                <label for="ID" class="from-label mt-4"><strong>Identification Number</strong></label>
+                <label for="identification" class="from-label mt-3"><strong>Identification Number</strong></label>
                 <input type="text" class="form-control" id="identification" placeholder="Enter your ID">
             </div>
 
             <div class="from-group">
-                <label for="semester" class="from-label mt-4"><strong>Semester</strong></label>
+                <label for="semester" class="from-label mt-3"><strong>Semester</strong></label>
                 <input type="text" class="form-control" id="semester" placeholder="Current semester">
             </div>
 
             <div class="from-group">
-                <label for="subject" class="from-label mt-4"><strong>Subject</strong></label>
-                <input type="text" class="form-control" id="subject-name" placeholder="Enter subject name">
+                <label for="subject" class="from-label mt-3"><strong>Subject</strong></label>
+                <input type="text" class="form-control" id="subjectName" placeholder="Enter subject name">
             </div>
 
             <div class="form-group">
-                <label for="date" class="form-label mt-4"><strong>Date</strong></label>
-                <input class="form-control" id="date" type="date">
+                <label for="date" class="form-label mt-3"><strong>Date</strong></label>
+                <input class="form-control" id="date" value="" readonly>
             </div>
 
-            <input type="submit" value="Submit" style="float: right;" class="btn btn-dark mt-3">
+            <input type="button" value="Submit" style="float: right;" class="btn btn-dark mt-3">  
         </form>
+
+        <table class="table table-hover text-center table-primary">
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">ID</th>
+                    <th scope="col">Semester</th>
+                    <th scope="col">Subject</th>
+                    <th scope="col">Date</th>
+                </tr>
+            </thead>
+            <tbody id="classList">
+
+            </tbody>
+        </table>
     </div>
 
     <script src="code.js"></script>
